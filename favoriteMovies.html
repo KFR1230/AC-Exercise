@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/725e9fe347.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./movie(2).html">Home</a>
+      <a class="navbar-brand" href="favoriteMovies.html">Favorite Movies</a>
+      <form class="d-flex" role="search" id="search-form">
+        <input class="form-control me-2" type="search" placeholder="Keyword..." aria-label="Search" id="search-input">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- card -->
+  <div class="container mt-5">
+    <div class="row" id="data-panel">
+      <!-- render card -->
+
+    </div>
+  </div>
+  <!-- pagination -->
+  <div class="container d-flex justify-content-center">
+    <nav aria-label="...">
+      <ul class="pagination" id="pagination">
+        <!-- render page -->
+      </ul>
+    </nav>
+  </div>
+  <!-- modal -->
+  <div class="modal" id="movie-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-8" id="movie-modal-image">
+              <img src="" alt="" class="img-fluid" id="modal-image">
+            </div>
+            <div class="col-sm-4">
+              <p><em id="movie-modal-date">release date:2022/12/18</em></p>
+              <p id="modal-description">Modal body text goes here.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- script -->
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="favoriteMovies.JS"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
